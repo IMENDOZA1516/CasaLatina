@@ -1,0 +1,90 @@
+.cardma, .cardmatwo {
+    &__texto {
+      h2 {
+        border-bottom: 5px solid #ffa400;
+      }
+    }
+  
+    &__imagen, &__imagen_2 {
+      img {
+        border-radius: 25px;
+      }
+    }
+  }
+  
+  .fa_cardma {
+    background-color: #FFFFFF;
+  }
+  
+  .cardma {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #000;
+    column-gap: 2rem;
+    align-items: center;
+    padding: 30px 70px;
+    margin: 0 auto;
+  
+    &__imagen_2 {
+      img {
+        width: 500px;
+      }
+    }
+  
+    p {
+      margin-top: 12px;
+    }
+  
+    @media screen and (max-width: 896px) {
+      display: block;
+      padding: 10px 50px;
+  
+      &__imagen_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
+  
+  .cardmatwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    column-gap: 0rem;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 10px 70px;
+  
+    &__imagen {
+      img {
+        width: 600px;
+      }
+    }
+  
+    p {
+      margin-top: 12px;
+    }
+  
+    @media screen and (max-width: 896px) {
+      display: block;
+      padding: 10px 50px;
+  
+      &__imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        img {
+          width: 500px;
+        }
+      }
+    }
+  }
+  

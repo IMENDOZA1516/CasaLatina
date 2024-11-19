@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== CSS ===============-->
+      <link rel="icon" href="../img/icono_pestania.ico">
+      <link rel="stylesheet" href="../less//less_gallery/gallery.less">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+      <title>MENU</title>
+   </head>
+
+   <body>
+    {{> header}}
+    <main>
+      <style>
+         h1 {
+             text-align: center;
+             font-family: 'Arial', sans-serif;
+             font-size: 3em;
+             color: #ff5722; /* Naranja vibrante */
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para resaltar */
+             animation: fadeIn 2s ease-out, glow 1.5s infinite alternate;
+         }
+   
+         @keyframes fadeIn {
+             0% {
+                 opacity: 0;
+                 transform: translateY(-20px);
+             }
+             100% {
+                 opacity: 1;
+                 transform: translateY(0);
+             }
+         }
+   
+         @keyframes glow {
+             0% {
+                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+             }
+             100% {
+                 text-shadow: 0 0 20px #ff5722, 0 0 30px #ff8a50;
+             }
+         }
+     </style>
+     <body>
+       <h1>GALERIA</h1>
+   </body>
+      <section>
+         {{> gallery}}
+     </section>
+    </main>
+    <br><br><br><br><br><br>
+   
+   </body>
+</html>

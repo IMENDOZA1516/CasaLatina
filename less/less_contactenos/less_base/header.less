@@ -1,0 +1,139 @@
+@brand-width: auto;
+@brand-height: 100%;
+@brand-margin: 0 0 0 5%;
+@brand-color: #fff;
+@brand-img-width: 150px;
+@brand-img-height: auto;
+@brand-img-margin-left: 10px;
+@brand-img-transition: opacity 1.5s ease-in-out;
+
+@menu-width: 60%;
+@menu-height: 100%;
+@menu-float: right;
+@menu-ul-width: 100%;
+@menu-ul-height: inherit;
+@menu-ul-margin: 0;
+@menu-ul-padding: 0;
+@menu-ul-display: flex;
+@menu-ul-li-width: 20%;
+@menu-ul-li-height: inherit;
+@menu-ul-li-display: inline-block;
+
+header {
+  width: 100%;
+  height: 80px;
+  line-height: 60px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  padding-top: 20px;
+
+  
+}
+
+.brand {
+  width: @brand-width;
+  height: @brand-height;
+  float: left;
+  margin: @brand-margin;
+  color: @brand-color;
+
+  img {
+    width: @brand-img-width;
+    height: @brand-img-height;
+    margin-left: @brand-img-margin-left;
+    position: absolute;
+    transition: @brand-img-transition;
+  }
+}
+
+.menu {
+  width: @menu-width;
+  height: @menu-height;
+  float: @menu-float;
+
+  ul {
+    width: @menu-ul-width;
+    height: @menu-ul-height;
+    margin: @menu-ul-margin;
+    padding: @menu-ul-padding;
+    display: @menu-ul-display;
+
+    li {
+      width: @menu-ul-li-width;
+      height: @menu-ul-li-height;
+      display: @menu-ul-li-display;
+
+      a {
+        color: #000000;
+      }
+
+      &:hover {
+        background-color: #007931;
+        color: #fff;
+        border-radius: 15px;
+        transition: all 1s;
+
+        a {
+          color: #fff;
+          transition: all 1s;
+        }
+      }
+    }
+  }
+}
+
+#menuToggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+
+  img {
+    width: 35px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .menu {
+    width: 100%;
+    height: auto;
+
+    ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s;
+
+      li {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #ffffff;
+        padding: 10px 0px 10px 5%;
+      }
+    }
+  }
+
+  .menu-icon {
+    width: 100px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    line-height: 60px;
+
+    img {
+      font-size: 1.7em;
+      color: #fff;
+    }
+  }
+
+  #menuToggle:checked~ul {
+    max-height: 350px;
+  }
+}
+

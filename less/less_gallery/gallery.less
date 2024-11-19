@@ -1,0 +1,80 @@
+@first-color: #11ab4a;
+@title-color: #333333;
+@text-color: #979797;
+@body-color: hsl(0, 0%, 95%); /*primary-backgroun color*/
+@container-color: hsl(0, 0%, 100%);
+
+@body-font: "Roboto", sans-serif;
+@h2-font-size: 1.25rem;
+@small-font-size: .813rem;
+
+@import url(cardsGallery.less);
+@import url(header.less);
+@import url(footer.less);
+
+* {
+    /*box-sizing: border-box;
+    padding: 0;
+    margin: 0;*/
+  }
+  
+  body {
+    font-family: @body-font;
+    background-color: @body-color; /* style less*/
+    color: @text-color;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+/******** MEDIAS ********/
+/* small */
+@media screen and (max-width:340px){
+    .container{
+        margin-inline: 1rem;
+    }
+    .card__data{
+        width: 250px;
+        padding: 1rem;
+    }
+}
+
+/* medium */
+@media screen and (min-width: 768px) {
+    .container{
+        margin-inline: 2rem;
+    }
+    .card__container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+
+/* large */
+@media screen and (min-width: 1120px) {
+    .container {
+      height: 100vh;
+    }
+  
+    .card__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card__img {
+      width: 348px;
+    }
+    .card__data {
+      width: 316px;
+      padding-inline: 2.5rem;
+    }
+  }

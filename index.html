@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CASA LATINA</title>
+  <link rel="stylesheet" href="less/less_index/style.less">
+  <link rel="icon" href="../img/icono_pestania.ico">
+  <script src="js/js_index.js"></script>
+</head>
+
+<body>
+  {{> header}}
+  <main>
+    <style>
+      h1 {
+          text-align: center;
+          font-family: 'Arial', sans-serif;
+          font-size: 3em;
+          color: #ff5722; /* Naranja vibrante */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para resaltar */
+          animation: fadeIn 2s ease-out, glow 1.5s infinite alternate;
+      }
+
+      @keyframes fadeIn {
+          0% {
+              opacity: 0;
+              transform: translateY(-20px);
+          }
+          100% {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      @keyframes glow {
+          0% {
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+          }
+          100% {
+              text-shadow: 0 0 20px #ff5722, 0 0 30px #ff8a50;
+          }
+      }
+  </style>
+  <body>
+    <h1>CASA LATINA</h1>
+</body>
+    <section class="hero-panel">
+      <picture>
+        <img src="img/IMG1.jpeg" alt="Cabecera Principal" />
+      </picture>
+    </section>
+    <section class="statistics-section">
+      <h2>Estadísticas de nuestro restaurante</h2>
+      <div class="statistics-container">
+        <div class="statistic">
+          <span class="statistic-number" data-target="5000">0</span>
+          <span class="statistic-label">Clientes Satisfechos</span>
+        </div>
+        <div class="statistic">
+          <span class="statistic-number" data-target="100">0</span>
+          <span class="statistic-label">Platillos de Menu</span>
+        </div>
+        <div class="statistic">
+          <span class="statistic-number" data-target="6">0</span>
+          <span class="statistic-label">Dias de Servicio</span>
+        </div>
+        <div class="statistic">
+          <span class="statistic-number" data-target="22000">0</span>
+          <span class="statistic-label">Comentarios Positivos</span>
+        </div>
+      </div>
+    </section>
+    <section class="fa_cardma">
+      <div class="cardma">
+        <div class="cardma__texto">
+          <h2>Bienvenido al Restaurante</h2>
+          <p>
+            Te ofrecemos una experiencia gastronómica centrada en la cocina tradicional 
+            con ingredientes de primera calidad, especializada en comida casera y bebidas frescas. 
+            Nuestros platos son un reflejo de la autenticidad y el sabor a casa.
+          </p>
+        </div>
+        <div class="cardma__imagen_2">
+          <img src="img/IMG4.jpeg" alt="imagen nosotros">
+        </div>
+      </div>
+
+      <div class="cardmatwo">
+        <div class="cardma__imagen">
+          <img src="img/nuestra_cocina.jpg" alt="imagen nosotros">
+        </div>
+
+        <div class="cardma__texto">
+          <h2>Nuestra cocina</h2>
+          <p>
+            La cocina tradicional está en el corazón de nuestra propuesta culinaria, 
+            que preparamos con ingredientes de la más alta calidad.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hero-panel-two">
+      <h2>Somos diferentes, Somos Casa Latina</h2>
+      <p>
+        Somos un restaurante y cafetería en pleno funcionamiento con un amplio menú. Servido 'Estilo de Casa' 
+        envuelto en papel, nuestras comidas son excelentes para ir en la tienda o en movimiento.
+      </p>
+      <picture>
+        <img src="img/IMG1.jpeg" alt="Cabecera Principal" />
+      </picture>
+    </section>
+  </main>
+  {{> footer}}
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@primary-background-color: #fff;
+@primary-text-color: #000;
+@secundary-background-color: #000;
+@secundary-text-color: #fff;
+@hover-color: #0c6613;
+
+@form-background-color: #ffe6a2;
+
+/* -----less imports----- */
+@import url('hero_panel.less');
+@import url('pregunta.less');
+@import url('container.less');
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: @primary-background-color;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  h2 {
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    font-weight: 1000;
+    line-height: 46px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 1000;
+    line-height: 46px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.56;
+}
+h1 {
+  color: @primary-text-color;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 20px;
+}
+
+
+  @media screen and (min-width: 1700px) {
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }

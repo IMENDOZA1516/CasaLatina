@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@primary-background-color: #f5f5f5;
+@primary-text-color: #333;
+@secundary-background-color: #000;
+@secundary-text-color: #fff;
+
+@form-background-color: #ffe6a2;
+
+/* -----less imports----- */
+
+@import url('/less/less_contactenos/less_base/header.less');
+@import url('/less/less_contactenos/less_base/events.less');
+@import url('/less/less_contactenos/less_base/footer.less');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: @primary-background-color;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informacion {
+  width: 100%;
+  max-width: 600px;
+  background-color: @form-background-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.informacion .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.informacion .form h1,
+.informacion .form h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.informacion .form h1 {
+  color: @secundary-background-color;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.informacion .form h2 {
+  color: darken(@primary-text-color, 20%);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.informacion .form label {
+  color: @primary-text-color;
+  font-weight: bold;
+}
+
+.informacion .form input,
+.informacion .form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lighten(@primary-text-color, 40%);
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.informacion .form input:focus,
+.informacion .form textarea:focus {
+  outline: none;
+  border-color: @secundary-background-color;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.informacion .form button {
+  background-color: @secundary-background-color;
+  color: @secundary-text-color;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.informacion .form button:hover {
+  background-color: darken(@secundary-background-color, 10%);
+}
+
+@media screen and (max-width: 768px) {
+  .informacion {
+      padding: 15px;
+  }
+
+  .informacion .form h1 {
+      font-size: 20px;
+  }
+
+  .informacion .form h2 {
+      font-size: 14px;
+  }
+
+  .informacion .form input,
+  .informacion .form textarea {
+      font-size: 12px;
+  }
+}
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contáctanos - Restaurante</title>
+    <link rel="stylesheet/less" type="text/css" href="/less/contacto.less" />
+    <link rel="stylesheet" href="/less/less_index/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+  </head>
+
+  <body>
+    {{> header}}
+    <main>
+      <form
+        id="formulario"
+        class="form"
+        action="http://localhost:3000/send-contact-form"
+        method="POST"
+      >
+        <div class="informacion">
+          <h1 class="H1">Contáctanos</h1>
+          <h2 class="H2">Envíanos tus dudas o comentarios</h2>
+
+          <div>
+            <label for="nombre">Nombre:</label><br />
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Correo Electrónico:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Tu correo electrónico"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="telefono">Teléfono:</label><br />
+            <input
+              type="text"
+              id="telefono"
+              name="telefono"
+              placeholder="Tu número de teléfono"
+              maxlength="8"
+              minlength="8"
+              required
+              oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 8);"
+              title="Debe ser un número de 8 dígitos"
+            />
+          </div>
+
+          <div>
+            <label for="fecha">Fecha:</label><br />
+            <input 
+              type="date" 
+              id="fecha" 
+              name="fecha" 
+              required 
+              onfocus="this.value = new Date().toISOString().split('T')[0];" />
+          </div>
+          
+          <div>
+            <label for="hora">Hora:</label><br />
+            <input 
+              type="time" 
+              id="hora" 
+              name="hora" 
+              required 
+              onfocus="this.value = new Date().toLocaleTimeString('en-US', { hour12: false }).slice(0, 5);" />
+          </div>
+          
+
+          <div>
+            <label for="mensaje">Mensaje:</label><br />
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-- Importamos el archivo de validaciones -->
+    <script src="../js/contacto.js"></script>
+  </body>
+  {{> footer}}
+</html>

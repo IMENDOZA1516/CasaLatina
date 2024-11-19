@@ -1,0 +1,29 @@
+.cuadro_fondo {
+    margin: 0 auto;
+    background-color: #ebebeb;
+    padding: 50px;
+
+    .cuadro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid #000;
+        background-color: #fff;
+        text-align: center;
+        column-gap: 2rem;
+        align-items: center;
+        padding: 20px;
+
+        figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 896px) {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 10px;
+        }
+    }
+}

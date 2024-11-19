@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../less/less_nosotros/style_nosotros.less">
+    <link rel="icon" href="../img/icono_pestania.ico">
+    <script src="../js/js_nosotros.js"></script>
+    <title>Acerca de Nosotros</title>
+</head>
+
+<body>
+    {{> header}}
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 3em;
+            color: #ff5722; /* Naranja vibrante */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para resaltar */
+            animation: fadeIn 2s ease-out, glow 1.5s infinite alternate;
+        }
+  
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+  
+        @keyframes glow {
+            0% {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            }
+            100% {
+                text-shadow: 0 0 20px #ff5722, 0 0 30px #ff8a50;
+            }
+        }
+    </style>
+    <body>
+      <h1>SOBRE NOSOTROS</h1>
+  </body>
+    <main>
+        <section class="hero-panel">
+            
+            <picture>
+                <img src="../img/IMG1.jpeg" alt="Cabecera Principal" />
+            </picture>
+        </section>
+        <section class="inicial">
+            <h2 class="title_inicial">
+                Restaurante Casa Latina nace con la idea de un negocio familiar, como iniciativa del 
+                Ingeniero Edward Orellana Díaz quien vio una oportunidad de negocio en el centro de la 
+                ciudad de Comayagua, en un local accesible, amplio y con excelentes oportunidades
+            </h2>
+            <p class="desc_inicial">
+                Casa Latina abrió el 7 de noviembre de 2011 en el barrio Torondón, con gran aceptación del público. 
+                Su nombre y eslogan, *Exquisito Sabor Latino "COMO EN CASA"*, reflejan su enfoque en ofrecer comida 
+                latina, hogareña y tradicional hondureña en un ambiente acogedor. Originalmente administrado por Gloria 
+                Marina Ulloa, esposa del Ing. Edward Orellana Díaz, fue posteriormente gestionado por su hijo Edward 
+                Geovany Orellana y su esposa Bessy Lanza, quien actualmente es la administradora. Bajo su dirección, 
+                Casa Latina se ha convertido en un lugar preferido para una clientela diversa en busca de buena comida.
+            </p>
+        </section>
+        <section>
+            <div class="sobre-nosotros_2">
+                <div class="sobre-nosotros__texto">
+                    <h2>Nuestra misión</h2>
+                    <p>
+                        Somos una empresa capaz de preparar alimentos y bebidas de calidad, mezclando sabores gastronómicos 
+                        tradicionales de Honduras, para satisfacer la necesidad de alimentación de los habitantes y turistas 
+                        de la Ciudad de Comayagua haciéndolos sentir "COMO EN CASA", a precios relativamente accesibles, con 
+                        servicio personalizado.
+                    </p>
+                </div>
+                <div class="sobre-nosotros__imagen_2">
+                    <img src="../img/IMG19.jpeg" alt="imagen nosotros">
+                </div>
+            </div>
+
+            <div class="sobre-nosotros">
+                <div class="sobre-nosotros__imagen">
+                    <img src="../img/IMG19.jpeg" alt="imagen nosotros">
+                </div>
+
+                <div class="sobre-nosotros__texto">
+                    <h2>Nuestra visión</h2>
+                    <p>
+                        Llegar a ser líder en el mercado de gastronomía tradicional en el casco histórico de la ciudad de 
+                        Comayagua y expandirnos a otro punto estratégico de la ciudad, manteniendo la esencia del restaurante. 
+                        Posicionándonos en el mercado bajo la etiqueta exquisito sabor latino "COMO EN CASA".
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="cardtotals">
+            <h2>Qué nos hace quienes somos</h2>
+            {{> cards}}
+        </section>
+        <section class="more">
+            <div class="grupo_1">
+                <div class="box">
+                    <div>
+                        <h3>Casa Latina: Uniendo Sabores y Compromisos</h3>
+                        <p>
+                            En Casa Latina, nos enorgullece combinar la tradición culinaria con un compromiso hacia 
+                            un impacto positivo en nuestra comunidad. Creemos que cada plato 
+                            que servimos y cada cliente que atendemos representa una oportunidad para fortalecer los lazos 
+                            con nuestros clientes frecuentes.
+                        </p>
+                    </div>
+                </div>
+                    <div class="box">
+                        <h3 class="title_box">Nuestras prioridades</h3>
+                        <p>
+                            Para Casa Latina, cada acción cuenta. Nuestro objetivo es trabajar hacia un restaurante 
+                            más sostenible, reducir el desperdicio y apoyar prácticas que respeten tanto la 
+                            biodiversidad como el entorno local. 
+                        </p>
+                        <h3 class="title_box">Cómo puedes ayudar</h3>
+                        <p>
+                            Como cliente, puedes ser parte de este cambio. Visítanos y disfruta de nuestros platos, 
+                            o si prefieres, apóyanos difundiendo nuestro compromiso con la sostenibilidad. 
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3 class="title_box">Preguntas frecuentes</h3>
+                        <p>
+                            Si tienes consultas sobre nuestros ingredientes, prácticas sostenibles, o cómo estamos 
+                            trabajando para reducir nuestra huella de carbono, visita nuestra sección de preguntas 
+                            frecuentes en la página web.
+                        </p>
+                        <h3 class="title_box">Unete a nuestra misión</h3>
+                        <p>
+                            Al ser parte de Casa Latina, no solo disfrutas de nuestra cocina sino que también contribuyes 
+                            a una causa que nos importa a todos. ¡Únete a nuestra misión y forma parte de Casa Latina!
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <section class="cuadro_fondo">
+            <div class="cuadro">
+                <figure>
+                    <img src="../img/IMG23.jpeg" alt="Arboles Pino">
+                </figure>
+                <div>
+                    <h3>Dos de nuestros mejores platillos de la mejor epoca "Navidad"</h3>
+                    <p>
+                        Para estas fiestas navideñas ven a desgustar de nuestros sabrosos platillos
+                        a los mejores precios, con una atencion especial por parte de nuestro personal,
+                        ven no te arrepentiras.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{>footer}}
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.more {
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+
+    .grupo_1 {
+        width: 100%;
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+
+        .title_box {
+            color: #ffa400;
+        }
+
+        @media screen and (max-width: 896px) {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+    }
+}
+
